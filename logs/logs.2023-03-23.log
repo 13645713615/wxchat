@@ -1,0 +1,236 @@
+[2023-03-23T02:49:56.942] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T02:51:11.930] [INFO] info - 微信服务器验证成功！
+[2023-03-23T02:51:11.932] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=c221bdb557336196ca25b5f15b715adb8870b60f&echostr=8611265110865866527&timestamp=1679511071&nonce=1952676618 - 响应:5ms
+[2023-03-23T02:51:58.957] [INFO] info - 微信服务器验证成功！
+[2023-03-23T02:51:58.958] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=69991b2da650d22bb33f5ce4e675934912b7fd7c&echostr=3539017517057695438&timestamp=1679511118&nonce=513752755 - 响应:1ms
+[2023-03-23T02:52:05.146] [INFO] info - 微信服务器验证失败！
+[2023-03-23T02:52:05.146] [INFO] info - URL: http://v7id7j.natappfree.cc/ - 响应:0ms
+[2023-03-23T02:52:05.917] [INFO] info - URL: http://v7id7j.natappfree.cc/favicon.ico - 响应:0ms
+[2023-03-23T02:52:19.031] [INFO] info - 微信服务器验证成功！
+[2023-03-23T02:52:19.032] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=ce4b874c3e14ef30da60519b156efd20c68c8f78&echostr=8721849978745474815&timestamp=1679511139&nonce=2003492938 - 响应:1ms
+[2023-03-23T02:55:29.009] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T02:55:34.077] [INFO] info - 微信服务器验证成功！
+[2023-03-23T02:55:34.078] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=5e9945c95735576860286f105c10f4e76787a96f&echostr=6466012805724884909&timestamp=1679511333&nonce=2025804271 - 响应:3ms
+[2023-03-23T02:57:45.770] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T02:57:47.377] [INFO] info - 微信服务器验证成功！
+[2023-03-23T02:57:47.378] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=85995ab4ea6a186b2f448ce234743e48f0853cd1&echostr=1187865214186385391&timestamp=1679511467&nonce=526297108 - 响应:3ms
+[2023-03-23T02:58:43.052] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T02:58:44.212] [INFO] info - 微信服务器验证成功！
+[2023-03-23T02:58:52.191] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:00:32.002] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:00:34.541] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:05:05.122] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:05:09.804] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:05:40.909] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:05:47.336] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:05:51.087] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:06:11.677] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:06:13.304] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:06:32.607] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:06:34.945] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:07:01.796] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:07:05.426] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:07:05.427] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=88a61a6699c9fdc98649a748b907ba819c372494&echostr=603093532711573465&timestamp=1679512025&nonce=315354870 - 响应:3ms
+[2023-03-23T03:09:32.297] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:09:38.862] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:09:38.864] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=094d6de92351653b2f6527cbdab4a926f01dbe58&echostr=6175512784166410098&timestamp=1679512178&nonce=983986103 - 响应:3ms
+[2023-03-23T03:11:05.407] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:11:05.408] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1ea72fb42393894ed0be90cea75a766f860bac8c&timestamp=1679512265&nonce=2088615181&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2ms
+[2023-03-23T03:12:57.707] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:12:57.708] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=71086b44ff030f74947371cc308b6346124803c9&timestamp=1679512377&nonce=1355826001&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:1ms
+[2023-03-23T03:13:16.811] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:13:25.686] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:13:25.687] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=e8bfce07225374cf5c76134fe5db7a865324152d&timestamp=1679512405&nonce=235759680&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:3ms
+[2023-03-23T03:15:26.815] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:15:39.117] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:15:39.118] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=7e65d4ef82c0f62cdc1d03d8056ec04b13ff152e&timestamp=1679512533&nonce=1492889596&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:8ms
+[2023-03-23T03:15:39.234] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:15:39.235] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=7e65d4ef82c0f62cdc1d03d8056ec04b13ff152e&timestamp=1679512533&nonce=1492889596&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2ms
+[2023-03-23T03:16:36.545] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:16:40.314] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=5420197716bc9396aefd63c59025c978b27ea5ba&timestamp=1679512600&nonce=456957720&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:23ms
+[2023-03-23T03:18:19.786] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:18:26.965] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:18:26.984] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=dd88a9cac66323d1544548c091822c6ab0b3cd7f&timestamp=1679512705&nonce=1871463910&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:21ms
+[2023-03-23T03:19:13.833] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:19:21.097] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:19:21.098] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=880fc429ae65b8d8610e128e8b5c79cc8b1155f3&timestamp=1679512761&nonce=1603627768&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:4ms
+[2023-03-23T03:20:03.133] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:20:12.090] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:20:12.092] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=acc6bfc7e7f06b5e5c7c2faa39fcbcdd916bb98a&echostr=1900771726382323199&timestamp=1679512811&nonce=996737839 - 响应:5ms
+[2023-03-23T03:20:23.715] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:20:31.119] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:20:31.121] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=8298ae86302816225c32e5d028c703d65a26c7ec&echostr=7137445532886064639&timestamp=1679512830&nonce=1097015411 - 响应:3ms
+[2023-03-23T03:20:44.035] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:20:44.035] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=8164494c77bb0f507a042d115e2e75d47b3f7a75&timestamp=1679512843&nonce=236687345&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:1ms
+[2023-03-23T03:23:24.786] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:23:29.048] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:23:29.066] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=31b2695ad07dc90a55b6d6488013f2514bc516fb&timestamp=1679513008&nonce=2056243528&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:20ms
+[2023-03-23T03:25:00.661] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:25:07.505] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:25:07.524] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=8ecaede2a6e910b3e6de1beb8c6e8290859ed495&timestamp=1679513107&nonce=19221623&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:22ms
+[2023-03-23T03:26:02.070] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:26:06.491] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:26:06.505] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=7745bb2d61a0f582ffd4fba310655d22e1a2159d&timestamp=1679513166&nonce=719208267&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:16ms
+[2023-03-23T03:28:17.343] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:28:24.060] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:28:24.076] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=ff8010f529abe57c9f52a4559e784c4537c50923&timestamp=1679513303&nonce=1655241663&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:17ms
+[2023-03-23T03:28:44.333] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:28:50.530] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:29:20.206] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:29:46.055] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:29:46.075] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1012ea1b5e02957b24b14a31254bbe3476f6c3b6&timestamp=1679513385&nonce=1973080029&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:23ms
+[2023-03-23T03:30:23.202] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:30:28.885] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:30:32.415] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:30:34.515] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=24ecf04deb0894e1b26e40466aec4e9d8e16b8e6&timestamp=1679513432&nonce=615812530&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2102ms
+[2023-03-23T03:31:20.947] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:31:35.946] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:31:41.553] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:31:50.703] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:31:52.042] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=0407f1061c155a8240fec6f925a345aee7c62503&timestamp=1679513510&nonce=656857768&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:1341ms
+[2023-03-23T03:32:59.479] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:33:02.046] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=657228f1d633d7e82067480bbb989438a8d7ccdc&timestamp=1679513579&nonce=475168797&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2567ms
+[2023-03-23T03:36:50.955] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:36:55.930] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:37:04.893] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:37:09.817] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:37:09.846] [INFO] info - 重复话题
+[2023-03-23T03:37:09.847] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4656e997ea5ee9574e79cfcfef0fbc0a83a68a0b&timestamp=1679513824&nonce=520747363&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:29ms
+[2023-03-23T03:37:09.861] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4656e997ea5ee9574e79cfcfef0fbc0a83a68a0b&timestamp=1679513824&nonce=520747363&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:4970ms
+[2023-03-23T03:44:19.168] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:45:45.167] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:46:01.827] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:46:06.662] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:46:14.852] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:46:19.308] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=c9850292187d67e5cbc69e194604bcb8386593f1&timestamp=1679514374&nonce=1134657886&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:4458ms
+[2023-03-23T03:47:07.034] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:47:54.262] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:48:03.941] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:48:06.262] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=74fd30c597a3800f53fefa468e14e3561dedfc38&timestamp=1679514483&nonce=1987114025&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2324ms
+[2023-03-23T03:48:30.100] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:48:34.050] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=d4b68a84ba6474278a386068abf1644ef4b49cc5&timestamp=1679514509&nonce=403672749&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:3949ms
+[2023-03-23T03:49:01.800] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:49:06.802] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:49:07.343] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:49:08.289] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=738f033d7adcb9f26fa13b6478a522666694d0fc&timestamp=1679514541&nonce=1019853302&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:6489ms
+[2023-03-23T03:49:10.345] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=738f033d7adcb9f26fa13b6478a522666694d0fc&timestamp=1679514541&nonce=1019853302&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:3543ms
+[2023-03-23T03:50:34.606] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:50:40.715] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:50:48.142] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:50:51.764] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=d789d054dc4344fdfdeb7fd16e2b9bb3c7fbac58&timestamp=1679514648&nonce=1660159883&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:3625ms
+[2023-03-23T03:51:00.642] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:51:10.191] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:51:15.222] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:51:15.247] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:51:17.250] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=b5c891224cf7754d5289b310893db779896779ce&timestamp=1679514670&nonce=1848288447&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2028ms
+[2023-03-23T03:51:19.842] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=b5c891224cf7754d5289b310893db779896779ce&timestamp=1679514670&nonce=1848288447&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:9653ms
+[2023-03-23T03:51:44.781] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:51:53.939] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:52:03.390] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:52:08.463] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:52:08.500] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:52:11.108] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=2fef5259a4242c8b2fc5e4fd59a568d8e58d40d0&timestamp=1679514723&nonce=681845903&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:7719ms
+[2023-03-23T03:52:13.457] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:52:13.491] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:52:18.502] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=2fef5259a4242c8b2fc5e4fd59a568d8e58d40d0&timestamp=1679514723&nonce=681845903&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:10039ms
+[2023-03-23T03:52:23.492] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=2fef5259a4242c8b2fc5e4fd59a568d8e58d40d0&timestamp=1679514723&nonce=681845903&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:10035ms
+[2023-03-23T03:53:15.493] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:53:22.435] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:53:34.179] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:53:39.111] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:53:39.134] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:53:41.291] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4e185f337b202012298457f0a19d7f62e4e5bf97&timestamp=1679514814&nonce=539185070&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:7114ms
+[2023-03-23T03:53:44.124] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:53:44.150] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:53:49.136] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4e185f337b202012298457f0a19d7f62e4e5bf97&timestamp=1679514814&nonce=539185070&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:10026ms
+[2023-03-23T03:53:54.152] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4e185f337b202012298457f0a19d7f62e4e5bf97&timestamp=1679514814&nonce=539185070&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:10027ms
+[2023-03-23T03:55:10.191] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:55:14.964] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:55:22.884] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:55:27.825] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:55:27.850] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:55:29.875] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=410f69471d49d1c9006d3128d3d17f25fded84fb&timestamp=1679514922&nonce=353477631&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:6993ms
+[2023-03-23T03:55:32.848] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:55:32.886] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:55:37.851] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=410f69471d49d1c9006d3128d3d17f25fded84fb&timestamp=1679514922&nonce=353477631&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:10026ms
+[2023-03-23T03:55:42.886] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=410f69471d49d1c9006d3128d3d17f25fded84fb&timestamp=1679514922&nonce=353477631&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:10038ms
+[2023-03-23T03:57:19.909] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:57:25.143] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T03:57:36.994] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:57:41.941] [INFO] info - 微信服务器验证成功！
+[2023-03-23T03:57:41.961] [INFO] info - 重复话题,等待结果
+[2023-03-23T03:57:44.338] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=ba07789677d769869ac993c8d049cb0a6acdde71&timestamp=1679515056&nonce=1697239633&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:7346ms
+[2023-03-23T03:57:45.962] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=ba07789677d769869ac993c8d049cb0a6acdde71&timestamp=1679515056&nonce=1697239633&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:4021ms
+[2023-03-23T03:59:59.240] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:00:03.262] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=95b2b929939dbb493a5adaeb66a4e761cb0fda8c&timestamp=1679515199&nonce=169044794&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:4023ms
+[2023-03-23T04:00:41.376] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:00:46.404] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:00:47.394] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4657aeb426dee6f6ec430c495ecc13d0477ba67c&timestamp=1679515241&nonce=222105039&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:6020ms
+[2023-03-23T04:00:51.478] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:00:52.406] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4657aeb426dee6f6ec430c495ecc13d0477ba67c&timestamp=1679515241&nonce=222105039&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:6002ms
+[2023-03-23T04:00:57.480] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4657aeb426dee6f6ec430c495ecc13d0477ba67c&timestamp=1679515241&nonce=222105039&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:6002ms
+[2023-03-23T04:01:34.484] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:01:39.500] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1f07fa73ce1f2c2b0592b9cd2faa8303a53d4b20&timestamp=1679515294&nonce=353488669&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5019ms
+[2023-03-23T04:01:39.510] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:01:44.513] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1f07fa73ce1f2c2b0592b9cd2faa8303a53d4b20&timestamp=1679515294&nonce=353488669&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5002ms
+[2023-03-23T04:01:44.531] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:01:49.534] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1f07fa73ce1f2c2b0592b9cd2faa8303a53d4b20&timestamp=1679515294&nonce=353488669&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5003ms
+[2023-03-23T04:02:18.181] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:02:35.900] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:02:42.397] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:02:47.427] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:02:47.454] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:02:47.813] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1ab6976a6a022f189aa461ca65711cbd42b24194&timestamp=1679515362&nonce=2069673743&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5417ms
+[2023-03-23T04:02:52.449] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:02:52.455] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1ab6976a6a022f189aa461ca65711cbd42b24194&timestamp=1679515362&nonce=2069673743&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5028ms
+[2023-03-23T04:02:52.477] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:02:57.479] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=1ab6976a6a022f189aa461ca65711cbd42b24194&timestamp=1679515362&nonce=2069673743&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5031ms
+[2023-03-23T04:03:30.647] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:04:13.772] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:04:18.786] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:04:18.833] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:04:19.142] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=43e2a43752d8ce4e72ab08dd6a4843bbec7b6545&timestamp=1679515453&nonce=1548660741&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5373ms
+[2023-03-23T04:04:23.821] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:04:23.835] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=43e2a43752d8ce4e72ab08dd6a4843bbec7b6545&timestamp=1679515453&nonce=1548660741&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5050ms
+[2023-03-23T04:04:23.841] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:04:28.843] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=43e2a43752d8ce4e72ab08dd6a4843bbec7b6545&timestamp=1679515453&nonce=1548660741&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5023ms
+[2023-03-23T04:06:19.172] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:06:27.230] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:06:32.364] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:06:37.101] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=d43c7eb68d3ac05a1220a335aebdbc2caab5b336&timestamp=1679515592&nonce=658756878&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:4740ms
+[2023-03-23T04:06:57.534] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:07:05.736] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:07:10.779] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:07:10.811] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:07:13.798] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4ddd064b24f9d7e60cef7ec7acc9550cd4c68cc6&timestamp=1679515625&nonce=1036350837&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:8063ms
+[2023-03-23T04:07:15.794] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:07:15.813] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4ddd064b24f9d7e60cef7ec7acc9550cd4c68cc6&timestamp=1679515625&nonce=1036350837&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5034ms
+[2023-03-23T04:07:15.817] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:07:20.818] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=4ddd064b24f9d7e60cef7ec7acc9550cd4c68cc6&timestamp=1679515625&nonce=1036350837&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5024ms
+[2023-03-23T04:10:19.208] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:11:08.384] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T04:11:19.584] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:11:24.498] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:11:24.521] [INFO] info - 重复话题,等待结果
+[2023-03-23T04:11:28.155] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=b1f5516ef41e33df25d04f9e13051d92e277fbc4&timestamp=1679515879&nonce=791811476&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:8573ms
+[2023-03-23T04:11:29.521] [INFO] info - 微信服务器验证成功！
+[2023-03-23T04:11:29.523] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=b1f5516ef41e33df25d04f9e13051d92e277fbc4&timestamp=1679515879&nonce=791811476&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:5026ms
+[2023-03-23T04:11:29.546] [INFO] info - 话题已经完成，返回内容
+[2023-03-23T04:11:29.547] [INFO] info - URL: http://v7id7j.natappfree.cc/?signature=b1f5516ef41e33df25d04f9e13051d92e277fbc4&timestamp=1679515879&nonce=791811476&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:26ms
+[2023-03-23T04:14:38.876] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T15:33:57.218] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T15:33:58.800] [INFO] info - MongoDB connected mongodb://root:Cai1186684149-@dds-bp1925e2958e3fb41534-pub.mongodb.rds.aliyuncs.com:3717,dds-bp1925e2958e3fb42532-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-67055713
+[2023-03-23T15:34:37.202] [INFO] info - 微信服务器验证成功！
+[2023-03-23T15:34:37.203] [INFO] info - URL: http://zyyaam.natappfree.cc/?signature=416af5f332133b48ae4280fd403b3b9babe9b9ac&echostr=8541893194074265391&timestamp=1679556877&nonce=840071220 - 响应:4ms
+[2023-03-23T15:35:01.607] [INFO] info - 微信服务器验证成功！
+[2023-03-23T15:35:04.108] [INFO] info - URL: http://zyyaam.natappfree.cc/?signature=468d39fe8c9d7735a22bb9850cb119cde79034db&timestamp=1679556901&nonce=2002902359&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2501ms
+[2023-03-23T15:47:09.243] [INFO] info - redis connected 42.192.71.228:6379
+[2023-03-23T15:47:10.274] [INFO] info - MongoDB connected mongodb://root:Cai1186684149-@dds-bp1925e2958e3fb41534-pub.mongodb.rds.aliyuncs.com:3717,dds-bp1925e2958e3fb42532-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-67055713
+[2023-03-23T15:49:29.982] [INFO] info - 微信服务器验证成功！
+[2023-03-23T15:49:30.037] [INFO] info - URL: http://zyyaam.natappfree.cc/?signature=2db2f1a1e5a007ae61485183b1b18409ef7c7891&timestamp=1679557769&nonce=481015199&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:57ms
+[2023-03-23T15:49:46.187] [INFO] info - 微信服务器验证成功！
+[2023-03-23T15:49:46.254] [INFO] info - URL: http://zyyaam.natappfree.cc/?signature=3b2ba2f08e57eca57a5b6b0a0caf42c6b03afead&timestamp=1679557786&nonce=722976555&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:68ms
+[2023-03-23T15:49:55.706] [INFO] info - 微信服务器验证成功！
+[2023-03-23T15:49:57.676] [INFO] info - URL: http://zyyaam.natappfree.cc/?signature=5ad060da9c5d265e9031e55ce1b8b678c22ef46e&timestamp=1679557795&nonce=2019774827&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:1971ms
+[2023-03-23T15:52:18.478] [INFO] info - 微信服务器验证成功！
+[2023-03-23T15:52:21.105] [INFO] info - URL: http://zyyaam.natappfree.cc/?signature=525740b3cf67077d50165c2ce9ae182bc24151fc&timestamp=1679557938&nonce=1111149474&openid=oujq56KlBe-HAbyX3kApvJYaYoyo - 响应:2627ms
