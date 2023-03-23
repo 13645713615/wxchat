@@ -20,4 +20,4 @@ ENV PORT 3000
 EXPOSE 3000
 
 # 容器启动时执行的命令，类似npm run start
-CMD ["node", "/home/nodeNestjs/dist/main.js"]
+CMD ["node", "/home/nodeNestjs/dist/app.js"]
