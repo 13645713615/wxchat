@@ -1,23 +1,16 @@
-FROM node:latest
 
-# 执行命令，创建文件夹
-RUN mkdir -p /home/nodeNestjs
-
-# 将根目录下的文件都copy到container（运行此镜像的容器）文件系统的文件夹下
-COPY ./nestjs /home/nodeNestjs
-
-WORKDIR /home/nodeNestjs
-
-# 安装项目依赖包
+FROM node:18-alpine AS build
+WORKDIR /home/nodeapp
+COPY package.json ./
 RUN npm install
-RUN npm build
-
-# 配置环境变量
-ENV HOST 0.0.0.0
-ENV PORT 3000
-
-# 容器对外暴露的端口号
+COPY . .
+RUN npm run build
+FROM node:18-alpine As production
+WORKDIR /home/nodeapp
+COPY --from=build /home/nodeapp/dist ./dist
+COPY --from=build /home/nodeapp/node_modules ./node_modules
 EXPOSE 3000
+CMD [ "node", "dist/app.js","--experimental-fetch" ]
 
-# 容器启动时执行的命令，类似npm run start
-CMD ["node", "/home/nodeNestjs/dist/app.js"]
+#  docker build -t wxchat .
+#  docker run -d -p 80:3000 --name="wxchat" wxchat:latest

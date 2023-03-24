@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 18:32:14
- * @LastEditTime: 2023-03-23 03:10:01
+ * @LastEditTime: 2023-03-24 18:48:00
  */
 import Koa from "koa";
 import Router from "koa-router";
@@ -24,4 +24,4 @@ app.use(BodyParser())
 .use(bodyResult)
 .use(router.routes())
 .use(router.allowedMethods())
-    .listen(80)
+    .listen(3000)
