@@ -3,8 +3,9 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 23:51:50
- * @LastEditTime: 2023-03-23 04:10:18
+ * @LastEditTime: 2023-03-25 00:37:40
  */
+import { logger } from '../utils/logger';
 import redisClient from '../utils/redis';
 import type { WxMessage } from '../utils/wxChat';
 
@@ -36,13 +37,22 @@ export const getSession = async (message: WxMessage) => {
     return await redis.get(key);
 }
 
+// 获取完成的话题
+export const getAnswerSession = async (message: WxMessage) => {
+    const content = await getSession(message);
+    if (content === null || content === EMPTY) {
+        return "";
+    }
+    return content
+}
+
 // 如果话题已经完成，返回内容，如果不存在，创建一个话题
 export const getSessionOrCreate = async (message: WxMessage) => {
     const content = await getSession(message);
     if (content === null) {
         createSession(message);
         return true;
-    }else if (content === EMPTY) {
+    } else if (content === EMPTY) {
         return "";
     }
     return content
@@ -52,4 +62,3 @@ export const getSessionOrCreate = async (message: WxMessage) => {
 export const getSessionKey = (message: WxMessage) => {
     return `message:${message.FromUserName}:session:${message.CreateTime}`;
 }
-

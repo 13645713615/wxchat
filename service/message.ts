@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 22:45:32
- * @LastEditTime: 2023-03-23 15:33:00
+ * @LastEditTime: 2023-03-24 21:34:38
  */
 import { CHAT_REPLY, INTRODUCE_REPLY, TRANSLATE_REPLY, UNSUBSCRIBE_REPLY, USE_COUNT_OVER_REPLY } from '../config';
 import exchange, { Message, Role } from '../utils/chat';
@@ -49,10 +49,11 @@ export const eventMessage = async (message: EventMessage) => {
     switch (Event) {
         case "subscribe":
             await isUserExist(FromUserName);
-            refreshUserTodayUseCount(FromUserName);
             createMessage(FromUserName, CHAT_REPLY, "system");
+            logger.info(`用户${FromUserName}订阅成功`);
             return toTextMessage({ FromUserName, ToUserName, Content: INTRODUCE_REPLY });
         case "unsubscribe":
+            logger.info(`用户${FromUserName}取消订阅`);
             return toTextMessage({ FromUserName, ToUserName, Content: UNSUBSCRIBE_REPLY });
         default:
             break;
@@ -105,7 +106,7 @@ export const createMessage = async (id: string, message: string, role: Role = "u
     }
     // 插入记录
     saveRecord(id, newRecord);
-
+    
     return content;
 }
 

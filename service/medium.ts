@@ -3,13 +3,14 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-23 02:13:41
- * @LastEditTime: 2023-03-23 02:39:23
+ * @LastEditTime: 2023-03-25 00:37:58
  */
 import { speech } from "baidu-aip-sdk-ts"
 import FormData from "form-data";
 import axios from "axios"
 import { BAIDU_API_KEY, BAIDU_APP_ID, BAIDU_SECRET_KEY } from "../config";
 import { getAccessToken } from "./accessToken";
+import logger from "../utils/logger";
 
 const baiduClient = new speech(BAIDU_APP_ID, BAIDU_API_KEY, BAIDU_SECRET_KEY)
 
@@ -36,6 +37,6 @@ export const uploadVoice = async (content: string): Promise<string> => {
     if (data.errcode) {
         throw new Error(`语音上传失败: ${data.errmsg}`)
     }
-
+    
     return data.media_id;
 }

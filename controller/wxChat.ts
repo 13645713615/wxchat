@@ -3,16 +3,16 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 18:52:25
- * @LastEditTime: 2023-03-23 14:30:03
+ * @LastEditTime: 2023-03-25 00:39:19
  */
 import type { Context } from "koa";
 import { toSignature, toTextMessage } from "../utils/wxChat";
 import type { WxContextQuery, WxMessage } from "../utils/wxChat";
 import logger from "../utils/logger";
 import rowBody from "raw-body"
-import { parseXML, delay } from "../utils/tools";
-import { getSessionOrCreate, answerSession } from "../service/session";
-import { ERROR_REPLY, INTRODUCE_REPLY, UNRECOGNIZED_REPLY } from "../config";
+import {  parseXML, pollPromise } from "../utils/tools";
+import { getSessionOrCreate, answerSession, getAnswerSession } from "../service/session";
+import { ERROR_REPLY, INTRODUCE_REPLY } from "../config";
 import { eventMessage, textMessage, voiceMessage } from "../service/message";
 
 
@@ -49,12 +49,20 @@ export const receiveMessage = async (ctx: Context) => {
             }
         } else if (session) {
             // 话题已经完成，返回内容
-            return toTextMessage({ ToUserName, FromUserName, Content: UNRECOGNIZED_REPLY });
+            return session
         } else {
-            // 话题存在，没有回答，等待第三次的结果
-            await delay(5000)
+            // 话题存在，没有回答，轮训查找
+            // await delay(5000)
+            const { result } = await pollPromise(async () => {
+                const result = await getAnswerSession(message)
+                if (!result) throw new Error("尝试再次获取话题");
+                return result
+            }, { sleep: 800, timeout: 1000, count: 7, endTime: 5000 })
+
+            if (result) return result;
         }
     } catch (error: any) {
+
         logger.error(error.message);
 
         return toTextMessage({ ToUserName, FromUserName, Content: ERROR_REPLY });
@@ -67,7 +75,6 @@ export const checkSignature = (ctx: Context) => {
     const { signature, timestamp, nonce, echostr } = ctx.query as unknown as WxContextQuery
     //验证消息的确来自微信服务器
     if (signature === toSignature(timestamp, nonce)) {
-        logger("微信服务器验证成功！")
         return echostr as string
     } else {
         logger("微信服务器验证失败！")

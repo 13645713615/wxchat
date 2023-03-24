@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-21 18:59:26
- * @LastEditTime: 2023-03-23 15:33:48
+ * @LastEditTime: 2023-03-24 23:44:07
  */
 
 import { COMMON_USER_USE_COUNT, VIP_USER_USE_COUNT } from "../config";
@@ -49,8 +49,10 @@ export const getUserTodayUseCount = async (id: string) => {
     const todayUseCount = await redis.get(key);
     if (todayUseCount) {
         return Number(todayUseCount)
-    } else {
+    } else if (todayUseCount === null) {
         return await refreshUserTodayUseCount(id);
+    } else {
+        return 0;
     }
 }
 
@@ -59,14 +61,15 @@ export const refreshUserTodayUseCount = async (id: string) => {
     let useCount: number = 0;
     const user = await userModel?.findOne({ id });
     // 判断用户是否封禁
-    if (user?.get("status") === 0) {
+    if (user?.get("status") == 0) {
         useCount = Number(user?.get("useCount") || 0)
     }
+    logger.debug(`用户: ${id} 今日可使用次数: ${useCount}`);
     const redis = redisClient.getRedis();
     const key = `user:${id}:todayUseCount`;
     await redis.set(key, useCount);
-    // 两小时后过期，防止用户使用次数不准确
-    await redis.expire(key, 7200);
+    // 二十四小时后刷新
+    await redis.expire(key, 86400);
     return useCount
 }
 
