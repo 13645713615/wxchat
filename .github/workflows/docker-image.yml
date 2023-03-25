@@ -24,20 +24,29 @@ jobs:
       # 抽取项目信息，主要是镜像的tag
       - name: Docker meta
         id: meta
-        uses: docker/metadata-action@v4
+        # uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v3
         with:
           # list of Docker images to use as base name for tags
           images: ${{ secrets.IMAGE_URL }} # registry.cn-hangzhou.aliyuncs.com/xxxxx/xxxxx
           # generate Docker tags based on the following events/attributes
-          tags: |
-            type=schedule
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=sha
-            
+          # tags: |
+          #   type=schedule
+          #   type=ref,event=branch
+          #   type=ref,event=pr
+          #   type=semver,pattern={{version}}
+          #   type=semver,pattern={{major}}.{{minor}}
+          #   type=semver,pattern={{major}}
+          #   type=sha
+      
+      # 时间
+      - name: Get Time
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          timeZone: 8
+          format: 'YYYY-MM-DD-HH-mm-ss'
+
       # setup-qemu 如果您想使用 QEMU 添加仿真支持以便能够针对更多平台进行构建，则 action 会很有用
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
@@ -62,4 +71,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${{ steps.meta.outputs.tags }}-${{ steps.time.outputs.time }}
+          labels: ${{ steps.meta.outputs.labels }}
