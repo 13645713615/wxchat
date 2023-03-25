@@ -1,3 +1,4 @@
+# 工作流程的名称
 name: Docker Image CI
 
 on:
@@ -5,14 +6,59 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+# 工作流程，可包含多个作业
 jobs:
 
+  # 作业1名称
   build:
-
+    # 指定的运行器环境
     runs-on: ubuntu-latest
-
+    
+    # 作业包含一系列任务，称为 steps
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      # 检出当前代码（触发工作流时的commits）
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          # list of Docker images to use as base name for tags
+          images: ${{ secrets.IMAGE_URL }} # registry.cn-hangzhou.aliyuncs.com/xxxxx/xxxxx
+          # generate Docker tags based on the following events/attributes
+          tags: |
+            type=schedule
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+            type=semver,pattern={{major}}
+            type=sha
+            
+      # setup-qemu 如果您想使用 QEMU 添加仿真支持以便能够针对更多平台进行构建，则 action 会很有用
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+        
+      # setup-buildxaction 将默认使用docker-container 构建器驱动程序创建和引导构建器。非必需
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      
+      # 登录到阿里云容器镜像服务
+      - name: Login to Ali Docker
+        uses: docker/login-action@v1
+        # 配置登录信息，secrets 变量在 github settings -> secrets 中设置
+        with:
+          registry: registry.cn-hangzhou.aliyuncs.com
+          username: ${{ secrets.ALIYUN_REGISTRY_USERNAME }}
+          password: ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
+
+      # 构建镜像并上传到阿里云容器镜像仓库 (自行百度创建自己的镜像仓库)
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
