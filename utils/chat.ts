@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-23 00:48:10
- * @LastEditTime: 2023-03-25 00:36:44
+ * @LastEditTime: 2023-03-25 16:58:30
  */
 
 import { Configuration, ConfigurationParameters, CreateChatCompletionRequest, OpenAIApi } from "openai"
@@ -70,7 +70,7 @@ export const exchange = async (messages: Message[]): Promise<[string, Message[]]
         throw new Error("没有回复");
     }
 
-    return [reply, [{ role: "assistant", content: reply }, messages.at(0) as Message]];
+    return [reply, [{ role: "assistant", content: reply }, messages.at(-1) as Message]];
 }
 
 export default exchange; 
