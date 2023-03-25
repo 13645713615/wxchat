@@ -1,4 +1,3 @@
-
 FROM node:18-alpine AS build
 WORKDIR /home/nodeapp
 COPY package.json ./
@@ -13,4 +12,4 @@ EXPOSE 3000
 CMD [ "node", "dist/app.js","--experimental-fetch" ]
 
 #  docker build -t wxchat .
-#  docker run -d -p 80:3000 --name="wxchat" wxchat:latest
+#  docker run -itd --privileged=true -p 80:3000 --name="wxchat" wxchat:latest
