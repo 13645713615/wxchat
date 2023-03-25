@@ -8,8 +8,8 @@ FROM node:18-alpine As production
 WORKDIR /home/nodeapp
 COPY --from=build /home/nodeapp/dist ./dist
 COPY --from=build /home/nodeapp/node_modules ./node_modules
-EXPOSE 3000
+EXPOSE 80
 CMD [ "node", "dist/app.js","--experimental-fetch" ]
 
 #  docker build -t wxchat .
-#  docker run -itd --privileged=true -p 80:3000 --name="wxchat" wxchat:latest
+#  docker run -itd --privileged=true -p 80:80 --name="wxchat" wxchat:latest
