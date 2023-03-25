@@ -3,9 +3,8 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 23:51:50
- * @LastEditTime: 2023-03-25 00:37:40
+ * @LastEditTime: 2023-03-25 16:50:02
  */
-import { logger } from '../utils/logger';
 import redisClient from '../utils/redis';
 import type { WxMessage } from '../utils/wxChat';
 
@@ -60,5 +59,5 @@ export const getSessionOrCreate = async (message: WxMessage) => {
 
 // 获取话题的key
 export const getSessionKey = (message: WxMessage) => {
-    return `message:${message.FromUserName}:session:${message.CreateTime}`;
+    return `message:${message.FromUserName}:session:${message.MsgType}`;
 }
