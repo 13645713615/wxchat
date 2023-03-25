@@ -21,6 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       
+      # 抽取项目信息，主要是镜像的tag
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v4
