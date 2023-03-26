@@ -2,7 +2,7 @@
   "name": "wxchat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn ./app.ts",
     "reset": "rimraf dist/*",
