@@ -3,14 +3,14 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-28 15:54:18
- * @LastEditTime: 2023-03-28 16:14:08
+ * @LastEditTime: 2023-03-29 00:48:51
  */
 export { };
 
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
-            APP_PORT?: number;
+            APP_PORT?: string;
             TOKEN:?string;
             APPID:?string;
             APPSECRET:?string;
@@ -21,10 +21,10 @@ declare global {
             GPT_URL:?string;
             MONGO_DB_URI:?string;
             REDIS_HOST:?string;
-            REDIS_PORT:?number;
+            REDIS_PORT:?string;
             REDIS_PASSWORD:?string;
-            COMMON_USER_USE_COUNT:?number;
-            VIP_USER_USE_COUNT:?number;
+            COMMON_USER_USE_COUNT:?string;
+            VIP_USER_USE_COUNT:?string;
             BAIDU_APP_ID:?string;
             BAIDU_API_KEY:?string;
             BAIDU_SECRET_KEY:?string;

@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 19:01:28
- * @LastEditTime: 2023-03-28 17:54:21
+ * @LastEditTime: 2023-03-29 00:49:51
  */
 
 
@@ -53,7 +53,7 @@ export const MONGO_DB_URI = process.env.MONGO_DB_URI || "mongodb://localhost:270
 
 export const REDIS_HOST = process.env.REDIS_HOST || ""
 
-export const REDIS_PORT = process.env.REDIS_PORT || 6379
+export const REDIS_PORT = Number(process.env.REDIS_PORT || 6379)
 
 export const REDIS_PASSWORD = process.env.REDIS_PASSWORD || ""
 
@@ -91,10 +91,10 @@ export const CHAT_REPLY = "你是一个聊天小助手，我说中文你就回�
  */
 
 // 普通用户默认使用次数
-export const COMMON_USER_USE_COUNT = process.env.COMMON_USER_USE_COUNT || 20;
+export const COMMON_USER_USE_COUNT = Number(process.env.COMMON_USER_USE_COUNT || 20);
 
 // VIP用户默认使用次数
-export const VIP_USER_USE_COUNT = process.env.VIP_USER_USE_COUNT || 100;
+export const VIP_USER_USE_COUNT = Number(process.env.VIP_USER_USE_COUNT || 100)
 
 /**
  * ========百度===========
