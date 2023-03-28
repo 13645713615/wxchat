@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 19:01:28
- * @LastEditTime: 2023-03-28 16:07:50
+ * @LastEditTime: 2023-03-28 16:14:11
  */
 
 
@@ -51,7 +51,7 @@ export const MONGO_DB_URI = process.env.GPT_URL || "mongodb://localhost:27017/we
  * ========Redis===========
  */
 
-export const REDIS_HOST = process.env.REDIS_HOST
+export const REDIS_HOST = process.env.REDIS_HOST || ""
 
 export const REDIS_PORT = process.env.REDIS_PORT || 6379
 

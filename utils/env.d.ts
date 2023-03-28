@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-28 15:54:18
- * @LastEditTime: 2023-03-28 16:01:05
+ * @LastEditTime: 2023-03-28 16:14:08
  */
 export { };
 
@@ -21,7 +21,7 @@ declare global {
             GPT_URL:?string;
             MONGO_DB_URI:?string;
             REDIS_HOST:?string;
-            REDIS_PORT:?string;
+            REDIS_PORT:?number;
             REDIS_PASSWORD:?string;
             COMMON_USER_USE_COUNT:?number;
             VIP_USER_USE_COUNT:?number;
