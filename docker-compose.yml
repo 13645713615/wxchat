@@ -1,4 +1,4 @@
-version: 3.9
+version: '3.9'
 services:
   wxchat:
     build: 
@@ -14,7 +14,7 @@ services:
       - GPT_ORG_ID=org-ZfsTvKHDodRCkVMbereUk3nA
       - GPT_MODEL=gpt-3.5-turbo
       - GPT_URL=https://xiugouai.top/v1
-      - MONGO_DB_URI= mongodb://root:Cai1186684149-@dds-bp1925e2958e3fb41534-pub.mongodb.rds.aliyuncs.com:3717,dds-bp1925e2958e3fb42532-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-67055713
+      - MONGO_DB_URI=mongodb://root:Cai1186684149-@dds-bp1925e2958e3fb41534-pub.mongodb.rds.aliyuncs.com:3717,dds-bp1925e2958e3fb42532-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-67055713
       - REDIS_HOST=42.192.71.228
       - REDIS_PASSWORD=1186684149
       - COMMON_USER_USE_COUNT=20;
@@ -27,5 +27,5 @@ services:
     stdin_open: true # docker run -i
     tty: true  # docker run -t
     privileged: true #允许容器修改
-    volumes:
-      - /home/wxchat/logs:/home/nodeapp/logs/
+    #volumes:
+      #- /home/wxchat/logs:/home/nodeapp/logs/
