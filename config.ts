@@ -3,25 +3,27 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 19:01:28
- * @LastEditTime: 2023-03-24 21:07:47
+ * @LastEditTime: 2023-03-28 16:07:50
  */
 
+
+export const APP_PORT = process.env.APP_PORT || 80
 /**
  * ========微信公众号配置===========
  */
 
-export const TOKEN = 'carroll'
+export const TOKEN = process.env.TOKEN || ""
 
-export const APPID = 'wx01f3fc110924d23f'
+export const APPID = process.env.APPID || ""
 
-export const APPSECRET = '7ebe835ad6680bf3d576c2a20ab68079'
+export const APPSECRET = process.env.APPSECRET || ""
 
 
 /**
  * ========log===========
  */
 
-export const LOG4JS_LOGPATH = 'logs'
+export const LOG4JS_LOGPATH = process.env.LOG4JS_LOGPATH || 'logs'
 
 
 
@@ -29,33 +31,31 @@ export const LOG4JS_LOGPATH = 'logs'
  * ========GPT===========
  */
 
-export const GPT_API_KEY = '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'
+export const GPT_API_KEY = process.env.GPT_API_KEY || ""
 
-export const GPT_ORG_ID = 'org-ZfsTvKHDodRCkVMbereUk3nA'
+export const GPT_ORG_ID = process.env.GPT_ORG_ID || ""
 
-export const GPT_MODEL = 'gpt-3.5-turbo'
+export const GPT_MODEL = process.env.GPT_MODEL || ""
 
-export const GPT_URL = 'https://xiugouai.top/v1'
+export const GPT_URL = process.env.GPT_URL || ""
 
 
 /**
  * ========db===========
  */
 
-export const MONGO_DB_NAME = 'chat'
-
-export const MONGO_DB_URI= 'mongodb://root:Cai1186684149-@dds-bp1925e2958e3fb41534-pub.mongodb.rds.aliyuncs.com:3717,dds-bp1925e2958e3fb42532-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-67055713'
+export const MONGO_DB_URI = process.env.GPT_URL || "mongodb://localhost:27017/wechat"
 
 
 /**
  * ========Redis===========
  */
 
-export const REDIS_HOST = '42.192.71.228'
+export const REDIS_HOST = process.env.REDIS_HOST
 
-export const REDIS_PORT = 6379
+export const REDIS_PORT = process.env.REDIS_PORT || 6379
 
-export const REDIS_PASSWORD = '1186684149'
+export const REDIS_PASSWORD = process.env.REDIS_PASSWORD || ""
 
 export const REDIS_DB = 0
 
@@ -91,22 +91,22 @@ export const CHAT_REPLY = "你是一个聊天小助手，我说中文你就回�
  */
 
 // 普通用户默认使用次数
-export const COMMON_USER_USE_COUNT = 20;
+export const COMMON_USER_USE_COUNT = process.env.COMMON_USER_USE_COUNT || 20;
 
 // VIP用户默认使用次数
-export const VIP_USER_USE_COUNT = 100;
+export const VIP_USER_USE_COUNT = process.env.VIP_USER_USE_COUNT || 100;
 
 /**
  * ========百度===========
  */
 
 // 百度APPID
-export const BAIDU_APP_ID = '31519020';
+export const BAIDU_APP_ID = process.env.BAIDU_APP_ID || '';
 
 // 百度API_KEY
-export const BAIDU_API_KEY = 'dFXxeZHrUSfoT6G2aPXTEtlB';
+export const BAIDU_API_KEY = process.env.BAIDU_API_KEY || '';
 
 // 百度SECRET_KEY
-export const BAIDU_SECRET_KEY = "7CdPiq9jthyudrqLQE2Um35O1zyGmMjW"
+export const BAIDU_SECRET_KEY = process.env.BAIDU_SECRET_KEY || ""
 
 

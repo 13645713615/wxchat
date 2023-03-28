@@ -2,3 +2,5 @@ logs
 dist
 node_modules
 .log
+.env
+docker-compose.yml
