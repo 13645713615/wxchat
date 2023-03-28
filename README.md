@@ -1,4 +1,4 @@
-# 口语训练
+# 口语训练 公众号
 
 koa2 + ioredis + mongoose + typescript
 
