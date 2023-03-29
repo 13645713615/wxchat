@@ -3,8 +3,9 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 23:51:50
- * @LastEditTime: 2023-03-25 16:50:02
+ * @LastEditTime: 2023-03-29 14:24:22
  */
+import { logger } from '../utils/logger';
 import redisClient from '../utils/redis';
 import type { WxMessage } from '../utils/wxChat';
 
@@ -19,6 +20,7 @@ export const createSession = async (message: WxMessage) => {
     const key = getSessionKey(message);
     await redis.set(key, EMPTY);
     await redis.expire(key, 60);
+    logger.debug("创建话题" + key)
 }
 
 // 消费一个话题
@@ -26,6 +28,7 @@ export const answerSession = (message: WxMessage, content: string) => {
     const redis = client.getRedis();
     const key = getSessionKey(message);
     redis.setex(key, 60, content);
+    logger.debug("话题:" + key + "已经完成，内容为:" + content)
     return content
 }
 

@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-21 18:59:26
- * @LastEditTime: 2023-03-24 23:44:07
+ * @LastEditTime: 2023-03-29 01:18:05
  */
 
 import { COMMON_USER_USE_COUNT, VIP_USER_USE_COUNT } from "../config";
@@ -64,7 +64,7 @@ export const refreshUserTodayUseCount = async (id: string) => {
     if (user?.get("status") == 0) {
         useCount = Number(user?.get("useCount") || 0)
     }
-    logger.debug(`用户: ${id} 今日可使用次数: ${useCount}`);
+    logger.info(`用户: ${id} 今日可使用次数: ${useCount}`);
     const redis = redisClient.getRedis();
     const key = `user:${id}:todayUseCount`;
     await redis.set(key, useCount);
