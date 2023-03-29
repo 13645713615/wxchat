@@ -3,11 +3,12 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 22:45:32
- * @LastEditTime: 2023-03-29 18:55:35
+ * @LastEditTime: 2023-03-30 00:36:43
  */
 import { CHAT_REPLY, INTRODUCE_REPLY, TRANSLATE_REPLY, UNSUBSCRIBE_REPLY, USE_COUNT_OVER_REPLY } from '../config';
 import exchange, { Message, Role } from '../utils/chat';
 import logger from '../utils/logger';
+import { asyncPrintTime } from '../utils/tools';
 import { Command, EventMessage, TextMessage, toTextMessage, toVoiceMessage, VoiceMessage, WxMessage } from '../utils/wxChat';
 import { uploadVoice } from './medium';
 import { deleteRecord, findRecord, saveRecord } from './record';
@@ -40,7 +41,7 @@ export const voiceMessage = async (message: VoiceMessage) => {
 
     const replyContent = await createMessage(FromUserName, Recognition.replace(/[。]+$/g, ''));
 
-    const MediaId = await uploadVoice(replyContent)
+    const MediaId = await asyncPrintTime(uploadVoice(replyContent), "生成素材ID")
 
     return toVoiceMessage({ FromUserName, ToUserName, MediaId });
 }
@@ -110,7 +111,7 @@ export const createMessage = async (id: string, message: string, role: Role = "u
     }
     // 插入记录
     saveRecord(id, newRecord);
-    
+
     return content;
 }
 

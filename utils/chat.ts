@@ -3,13 +3,13 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-23 00:48:10
- * @LastEditTime: 2023-03-25 16:58:30
+ * @LastEditTime: 2023-03-30 00:35:06
  */
 
 import { Configuration, ConfigurationParameters, CreateChatCompletionRequest, OpenAIApi } from "openai"
 import { GPT_API_KEY, GPT_MODEL, GPT_ORG_ID, GPT_URL } from "../config";
 import { logger } from "./logger";
-import { asyncPrintTime, delay, pollPromise, retry } from "./tools";
+import { asyncPrintTime, retry } from "./tools";
 
 // role 类型
 export type Role = 'system' | 'user' | 'assistant';
@@ -64,7 +64,7 @@ export const exchange = async (messages: Message[]): Promise<[string, Message[]]
 
     const chat = ChatClient.getInstance({ organization: GPT_ORG_ID, apiKey: GPT_API_KEY, }, GPT_URL);
 
-    const reply = await retry(() => chat.create({ messages, model: GPT_MODEL, temperature: 0.5, max_tokens: 200 }), 3, 10000, 0);
+    const reply = await asyncPrintTime(retry(() => chat.create({ messages, model: GPT_MODEL, temperature: 0.5, max_tokens: 200 }), 3, 10000, 0), "创建消息")
 
     if (!reply) {
         throw new Error("没有回复");

@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 23:51:50
- * @LastEditTime: 2023-03-29 14:24:22
+ * @LastEditTime: 2023-03-30 00:38:56
  */
 import { logger } from '../utils/logger';
 import redisClient from '../utils/redis';
@@ -28,7 +28,7 @@ export const answerSession = (message: WxMessage, content: string) => {
     const redis = client.getRedis();
     const key = getSessionKey(message);
     redis.setex(key, 60, content);
-    logger.debug("话题:" + key + "已经完成，内容为:" + content)
+    logger.debug("话题:" + key + "已经完成")
     return content
 }
 
@@ -62,5 +62,5 @@ export const getSessionOrCreate = async (message: WxMessage) => {
 
 // 获取话题的key
 export const getSessionKey = (message: WxMessage) => {
-    return `message:${message.FromUserName}:session:${message.MsgType}`;
+    return `message:${message.FromUserName}:session:${message.CreateTime}`;
 }
