@@ -3,13 +3,15 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-28 15:54:18
- * @LastEditTime: 2023-03-29 00:48:51
+ * @LastEditTime: 2023-03-29 22:57:30
  */
 export { };
 
 declare global {
     namespace NodeJS {
         interface ProcessEnv {
+            // 判断是在pm2中运行
+            NODE_APP_INSTANCE?: string;
             APP_PORT?: string;
             TOKEN:?string;
             APPID:?string;

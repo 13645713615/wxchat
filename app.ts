@@ -3,10 +3,11 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 18:32:14
- * @LastEditTime: 2023-03-29 18:08:32
+ * @LastEditTime: 2023-03-29 23:08:05
  */
 import dotenv from "dotenv"
 dotenv.config()
+import log from './utils/logger'
 import Koa from "koa";
 import Router from "koa-router";
 import BodyParser from "koa-bodyparser";
@@ -14,7 +15,6 @@ import { checkSignature, receiveMessage } from "./controller/wxChat";
 import logger from "./middleware/logger";
 import bodyResult from "./middleware/result";
 import { APP_PORT } from "./config";
-import log from './utils/logger'
 import { AccessToken } from "./service/accessToken";
 
 const app = new Koa();

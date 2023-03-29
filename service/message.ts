@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 22:45:32
- * @LastEditTime: 2023-03-25 16:41:15
+ * @LastEditTime: 2023-03-29 18:55:35
  */
 import { CHAT_REPLY, INTRODUCE_REPLY, TRANSLATE_REPLY, UNSUBSCRIBE_REPLY, USE_COUNT_OVER_REPLY } from '../config';
 import exchange, { Message, Role } from '../utils/chat';
@@ -31,7 +31,7 @@ export const voiceMessage = async (message: VoiceMessage) => {
 
     const { Recognition, FromUserName, ToUserName } = message;
 
-    if (Recognition === undefined) {
+    if (!Recognition) {
         throw new Error("语音识别获取不到参数 Recognition");
     }
 

@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@takin/pm2-intercom-log4js': ^1.0.1
   '@types/koa': ^2.13.5
   '@types/koa-bodyparser': ^4.3.10
   '@types/koa-router': ^7.4.4
@@ -30,6 +31,7 @@ specifiers:
   xml2js: ^0.4.23
 
 dependencies:
+  '@takin/pm2-intercom-log4js': 1.0.1
   axios: 1.3.4
   baidu-aip-sdk-ts: 2.3.3
   dotenv: 16.0.3
@@ -88,6 +90,11 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@takin/pm2-intercom-log4js/1.0.1:
+    resolution: {integrity: sha512-K7YmrI0sMWjseOYmkE4iq9dWzgs1LtdyjfCD6a8FNrfYP78yWTDaSIrNDouuA9H+OkRAW6fIZCmrF5jyjYpx/g==}
+    engines: {node: '>= 8.0.0'}
+    dev: false
 
   /@tsconfig/node10/1.0.9:
     resolution: {integrity: sha512-jNsYVVxU8v5g43Erja32laIDHXeoNvFEpX33OK4d6hljo3jDhCBDhx5dhCCTMWUojscpAagGiRkBKxpdl9fxqA==}

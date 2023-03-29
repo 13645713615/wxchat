@@ -3,13 +3,12 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 19:01:12
- * @LastEditTime: 2023-03-22 19:01:13
+ * @LastEditTime: 2023-03-30 00:11:21
  */
 
 // log4js
 import log4js from 'log4js';
 import { LOG4JS_LOGPATH } from '../config';
-
 
 // log4js 级别类型
 type Levels = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal' | 'mark';
@@ -17,7 +16,12 @@ type Levels = 'trace' | 'debug' | 'info' | 'warn' | 'error' | 'fatal' | 'mark';
 // log4js 级别数组
 const levels: Levels[] = ['trace', 'debug', 'info', 'warn', 'error', 'fatal', 'mark'];
 
-log4js.configure({
+type ContextLogger = {
+    (message: string, level?: Levels): void;
+} & Record<Levels, (message: string) => void>;
+
+// 默认配置
+const defaultConfig: log4js.Configuration = {
     appenders: {
         console: {
             type: 'console'
@@ -49,12 +53,21 @@ log4js.configure({
             level: "error"
         }
     }
-})
+}
 
+if (process.env.PM2_HOME !== undefined) {
+    import("@takin/pm2-intercom-log4js").then((pm2Intercom) => {
+        pm2Intercom.default().finally(() => {
+            // 兼容pm2 配置
+            defaultConfig.pm2 = true;
+            defaultConfig.pm2InstanceVar = "INSTANCE_ID";
+            log4js.configure(defaultConfig)
+        })
+    })
+} else {
+    log4js.configure(defaultConfig)
+}
 
-type ContextLogger = {
-    (message: string, level?: Levels): void;
-} & Record<Levels, (message: string) => void>;
 
 // 日志输出
 //@ts-ignore
