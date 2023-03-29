@@ -17,10 +17,10 @@ services:
       - MONGO_DB_URI=mongodb://root:Cai1186684149-@dds-bp1925e2958e3fb41534-pub.mongodb.rds.aliyuncs.com:3717,dds-bp1925e2958e3fb42532-pub.mongodb.rds.aliyuncs.com:3717/admin?replicaSet=mgset-67055713
       - REDIS_HOST=42.192.71.228
       - REDIS_PASSWORD=1186684149
-      - COMMON_USER_USE_COUNT=20;
-      - VIP_USER_USE_COUNT=100;
-      - BAIDU_APP_ID=31519020;
-      - BAIDU_API_KEY=dFXxeZHrUSfoT6G2aPXTEtlB;
+      - COMMON_USER_USE_COUNT=20
+      - VIP_USER_USE_COUNT=100
+      - BAIDU_APP_ID=31519020
+      - BAIDU_API_KEY=dFXxeZHrUSfoT6G2aPXTEtlB
       - BAIDU_SECRET_KEY="7CdPiq9jthyudrqLQE2Um35O1zyGmMjW"
     ports:
       - 80:80
