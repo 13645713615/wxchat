@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-23 02:15:04
- * @LastEditTime: 2023-03-23 03:36:50
+ * @LastEditTime: 2023-03-29 18:04:12
  */
 import { APPID, APPSECRET } from "../config";
 import { logger } from "../utils/logger";
@@ -118,5 +118,5 @@ export class AccessToken {
 
 export const getAccessToken = async () => {
     const instance = await AccessToken.getInstance()
-    return instance.getAccessToken()
+    return await instance.getAccessToken()
 }

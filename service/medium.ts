@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-23 02:13:41
- * @LastEditTime: 2023-03-29 14:39:19
+ * @LastEditTime: 2023-03-29 18:01:48
  */
 import { speech } from "baidu-aip-sdk-ts"
 import FormData from "form-data";
@@ -21,7 +21,7 @@ export const uploadVoice = async (content: string): Promise<string> => {
     // 语音合成
     const result = await baiduClient.text2audio(content, { spd: 5, per: 4 })
     if (result.err_no) {
-        throw new Error(`语音合成失败: ${result.err_msg}`)
+        throw new Error(`语音上传失败: ${result.err_msg}`)
     }
 
     // 语音转码
