@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-18 22:46:18
- * @LastEditTime: 2023-03-25 00:32:32
+ * @LastEditTime: 2023-03-31 18:20:08
  */
 import xml2 from "xml2js"
 import { logger } from './logger';
@@ -117,21 +117,21 @@ export const pollPromise = async <T>(promiseFn: () => Promise<T>, options: PollP
 
 
 // 错误重试
-export const retry = async <T>(promiseFn: () => Promise<T>, count: number, endTime: number = 5000, interval: number = 1000) => {
-    const start = Date.now();
-
-    for (let i = 0; i < count; i++) {
-
-        if (Date.now() - start > endTime) return;
-
-        try {
-            return await promiseFn();
-        } catch (e) {
-            if (i === count - 1) {
-                throw e;
-            } else {
+export const retry = <T>(promiseFn: () => Promise<T>, count: number, endTime: number = 5000, interval: number = 1000) => Promise.race<[Promise<T | undefined>, Promise<undefined>]>([
+    (async () => {
+        for (let i = 0; i < count; i++) {
+            try {
+                return await promiseFn();
+            } catch (e: any) {
+                logger.error(`请求失败，正在重试...` + e.message);
                 await delay(interval);
             }
         }
-    }
-}
+    })(),
+    new Promise<undefined>((resolve) => {
+        setTimeout(() => {
+            logger.error(`请求超时，重试次数已达上限`);
+            resolve(undefined);
+        }, endTime);
+    })
+])
