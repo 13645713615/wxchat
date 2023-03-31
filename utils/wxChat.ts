@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 19:18:32
- * @LastEditTime: 2023-03-23 14:49:58
+ * @LastEditTime: 2023-03-31 17:20:01
  */
 import { TOKEN } from '../config';
 import sha1 from 'sha1';
@@ -154,4 +154,5 @@ export const toVoiceMessage = (message: PartialBy<VoiceMessage, "FromUserName" |
 export enum Command {
     Chat = '聊天',
     Translate = '翻译',
+    Teacher = '训练',
 }

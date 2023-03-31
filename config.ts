@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 19:01:28
- * @LastEditTime: 2023-03-29 00:49:51
+ * @LastEditTime: 2023-03-31 17:18:47
  */
 
 
@@ -77,13 +77,14 @@ export const USE_COUNT_OVER_REPLY = "你今天的使用次数已用完，明天�
 export const UNSUBSCRIBE_REPLY = "再见，期待你的下次使用";
 
 // 介绍回复语
-export const INTRODUCE_REPLY = "你可以通过以下方式与我交流：\n1.聊天\n2.翻译";
+export const INTRODUCE_REPLY = "你可以通过以下方式与我交流：\n1.聊天\n2.翻译\n3.训练";
 
 // 翻译提示语
-export const TRANSLATE_REPLY = "你是一个翻译小助手，我说中文你就翻译成英文，我说英文你就翻译成中文";
-
+export const TRANSLATE_REPLY = "You are a translation assistant. When I speak Chinese, you translate into English. When I speak English, you translate into Chinese";
 // 聊天提示语
-export const CHAT_REPLY = "你是一个聊天小助手，我说中文你就回复中文，我说英文你就回复英文";
+export const CHAT_REPLY = "You are a chat assistant. If I speak Chinese, you will reply in Chinese. If I speak English, you will reply in English";
+// 训练提示语
+export const English_Teacher_REPLY = "Hi. I'm a native Chinese speaker. I want you to act as my English teacher to help me improve. I will talk to you in in a mixture of English and Chinese, and you will reply to me in English to practice my English. In your reply, you MUST include a Chinese translation (without phonetic notation) of what you just say. I want you to keep your reply neat, try limiting the reply to within 100 words. I want you to strictly point out and correct my grammar mistakes, typos, and factual errors. You MUST always ask me a question in your reply to continue the conversation. Now let's start practicing, you could ask me a question first.";
 
 
 /**

@@ -3,16 +3,16 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 22:45:32
- * @LastEditTime: 2023-03-30 00:36:43
+ * @LastEditTime: 2023-03-31 17:23:50
  */
-import { CHAT_REPLY, INTRODUCE_REPLY, TRANSLATE_REPLY, UNSUBSCRIBE_REPLY, USE_COUNT_OVER_REPLY } from '../config';
+import { CHAT_REPLY, English_Teacher_REPLY, INTRODUCE_REPLY, TRANSLATE_REPLY, UNSUBSCRIBE_REPLY, USE_COUNT_OVER_REPLY } from '../config';
 import exchange, { Message, Role } from '../utils/chat';
 import logger from '../utils/logger';
 import { asyncPrintTime } from '../utils/tools';
 import { Command, EventMessage, TextMessage, toTextMessage, toVoiceMessage, VoiceMessage, WxMessage } from '../utils/wxChat';
 import { uploadVoice } from './medium';
 import { deleteRecord, findRecord, saveRecord } from './record';
-import { consumeUserTodayUseCount, getUserTodayUseCount, isUserExist, refreshUserTodayUseCount } from "./user";
+import { consumeUserTodayUseCount, getUserTodayUseCount, isUserExist } from "./user";
 
 // 处理微信text消息
 export const textMessage = async (message: TextMessage) => {
@@ -77,6 +77,10 @@ export const commandMessage = async (context: string, Message: WxMessage) => {
         case "2":
         case Command.Translate:
             replyContent = await createMessage(FromUserName, TRANSLATE_REPLY, "system");
+            return toTextMessage({ FromUserName, ToUserName, Content: replyContent });
+        case "3":
+        case Command.Teacher:
+            replyContent = await createMessage(FromUserName, English_Teacher_REPLY, "system");
             return toTextMessage({ FromUserName, ToUserName, Content: replyContent });
         default:
             break;
