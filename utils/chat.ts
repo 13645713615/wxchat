@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-23 00:48:10
- * @LastEditTime: 2023-03-31 18:21:08
+ * @LastEditTime: 2023-03-31 18:48:08
  */
 
 import { Configuration, ConfigurationParameters, CreateChatCompletionRequest, OpenAIApi } from "openai"
@@ -17,6 +17,7 @@ export type Role = 'system' | 'user' | 'assistant';
 // messages 类型
 export interface Message {
     content: string;
+    time?: number;
     role: Role;
 }
 
@@ -70,7 +71,7 @@ export const exchange = async (messages: Message[]): Promise<[string, Message[]]
         throw new Error("没有回复");
     }
 
-    return [reply, [{ role: "assistant", content: reply }, messages.at(-1) as Message]];
+    return [reply, [{ role: "assistant", time: Date.now(), content: reply }, messages.at(-1) as Message]];
 }
 
 export default exchange; 

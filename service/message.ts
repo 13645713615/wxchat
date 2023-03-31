@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-22 22:45:32
- * @LastEditTime: 2023-03-31 17:23:50
+ * @LastEditTime: 2023-03-31 18:49:04
  */
 import { CHAT_REPLY, English_Teacher_REPLY, INTRODUCE_REPLY, TRANSLATE_REPLY, UNSUBSCRIBE_REPLY, USE_COUNT_OVER_REPLY } from '../config';
 import exchange, { Message, Role } from '../utils/chat';
@@ -106,7 +106,7 @@ export const createMessage = async (id: string, message: string, role: Role = "u
         logger.error(error.message)
     }
 
-    messages.push({ role, content: message })
+    messages.push({ role, content: message, time: Date.now() })
 
     const [content, newRecord] = await exchange(messages)
 

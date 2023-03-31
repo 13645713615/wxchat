@@ -3,7 +3,7 @@
  * @version: 
  * @Author: Carroll
  * @Date: 2023-03-18 22:46:18
- * @LastEditTime: 2023-03-31 18:20:08
+ * @LastEditTime: 2023-03-31 18:57:22
  */
 import xml2 from "xml2js"
 import { logger } from './logger';
@@ -127,11 +127,9 @@ export const retry = <T>(promiseFn: () => Promise<T>, count: number, endTime: nu
                 await delay(interval);
             }
         }
+        throw new Error("请求失败，重试次数已达上限");
     })(),
-    new Promise<undefined>((resolve) => {
-        setTimeout(() => {
-            logger.error(`请求超时，重试次数已达上限`);
-            resolve(undefined);
-        }, endTime);
+    new Promise<undefined>((_, reject) => {
+        setTimeout(() => reject(new Error("请求超时")), endTime);
     })
 ])
