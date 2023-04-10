@@ -13,9 +13,8 @@ koa2 + ioredis + mongoose + typescript
    - fetch
 
 ## 使用
-   1. Clone the repository.
-   2. Run `yarn install` to install dependencies.
-   3. Create a `.env` file in the root directory and paste the following:
+   1. 运行 `pnpm install` 安装依赖.
+   2. 在根目录中创建一个 .env 文件并粘贴以下内容：
 
    ```
       APP_PORT=
