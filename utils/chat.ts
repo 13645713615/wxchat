@@ -6,7 +6,7 @@
  * @LastEditTime: 2023-03-31 18:48:08
  */
 
-import { Configuration, ConfigurationParameters, CreateChatCompletionRequest, OpenAIApi } from "openai"
+import { ChatCompletionRequestMessage, Configuration, ConfigurationParameters, CreateChatCompletionRequest, OpenAIApi } from "openai"
 import { GPT_API_KEY, GPT_MODEL, GPT_ORG_ID, GPT_URL } from "../config";
 import { logger } from "./logger";
 import { asyncPrintTime, retry } from "./tools";
@@ -43,11 +43,11 @@ export class ChatClient {
     }
 
     // 创建消息
-    public async create(options: Partial<CreateChatCompletionRequest> & { messages: Message[] }) {
+    public async create(options: CreateChatCompletionRequest) {
         try {
-            const { model = 'gpt-3.5-turbo', ...args } = options;
+            const { model = 'gpt-3.5-turbo', messages, ...args } = options;
 
-            const completions = await this.client.createChatCompletion({ ...args, model })
+            const completions = await this.client.createChatCompletion({ ...args, model, messages: messages.map<ChatCompletionRequestMessage>((item: Message) => ({ role: item.role, content: item.content.replace(/^[\n]+|[\n]+$/g, '') })) })
 
             return completions.data.choices[0].message?.content?.replace(/^[\n]+|[\n]+$/g, '');
         } catch (error: any) {
@@ -65,7 +65,7 @@ export const exchange = async (messages: Message[]): Promise<[string, Message[]]
 
     const chat = ChatClient.getInstance({ organization: GPT_ORG_ID, apiKey: GPT_API_KEY, }, GPT_URL);
 
-    const reply = await asyncPrintTime(retry(() => chat.create({ messages, model: GPT_MODEL, temperature: 0.5, max_tokens: 200 }), 2, 10000, 0), "创建消息")
+    const reply = await asyncPrintTime(retry(() => chat.create({ messages, model: GPT_MODEL, temperature: 0.5, max_tokens: 400 }), 2, 13000, 0), "创建消息")
 
     if (!reply) {
         throw new Error("没有回复");
