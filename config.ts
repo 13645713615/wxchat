@@ -65,7 +65,7 @@ export const REDIS_DB = 0
  */
 
 // 错误回复语
-export const ERROR_REPLY = "抱歉服务器维护中，请稍后再试？";
+export const ERROR_REPLY = "抱歉服务器维护中，请稍后再试!";
 
 // 无法识别的消息回复语
 export const UNRECOGNIZED_REPLY = "你说的我听不懂，你可以换种说法吗？";
